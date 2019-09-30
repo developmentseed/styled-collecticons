@@ -44,13 +44,14 @@ const Button = styled.button`
 
 const Trash = styled(TrashBin)`
   margin-right: 5px;
+  fill: red;
 `
 
 function Example () {
   return <div>
     <h1>Icons</h1>
     <Button>
-      <Trash fill="red" width={16} height={16} />
+      <Trash size='1em' />
       Delete
     </Button>
   </div>
