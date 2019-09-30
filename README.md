@@ -38,8 +38,8 @@ import { TrashBin } from 'styled-collecticons'
 const Button = styled.button`
   background-color: #efefef;
   padding: 10px;
-  line-height: 16px;
-  font-size: 16px;
+  line-height: 1em;
+  font-size: 1em;
 `
 
 const Trash = styled(TrashBin)`
