@@ -1,0 +1,41 @@
+{
+  "name": "styled-collecticons",
+  "version": "0.0.0",
+  "description": "The collecticons icon library made available via react components, compatible with styled-components.",
+  "main": "index.js",
+  "sideEffects": false,
+  "scripts": {
+    "lint": "devseed-standard",
+    "lintfix": "devseed-standard --fix",
+    "example-start": "budo example/index.js --live -- -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ]",
+    "create-icons": "node scripts/create-icon-components.js && npm run lintfix"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "styled-components": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@svgr/core": "^4.3.3",
+    "babelify": "^10.0.0",
+    "budo": "^11.6.3",
+    "collecticons-lib": "^2.1.0",
+    "devseed-standard": "^1.1.0",
+    "folder-reader": "^2.0.0",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.upperfirst": "^4.3.1",
+    "mkdirp": "^0.5.1",
+    "pump": "^3.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "rimraf": "^3.0.0",
+    "styled-components": "^4.4.0",
+    "through2": "^3.0.1"
+  },
+  "author": {
+    "name": "Development Seed",
+    "url": "https://developmentseed.org"
+  }
+}
