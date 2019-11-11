@@ -24,12 +24,11 @@ const BaseComponent = props => {
   )
 }
 
-export const TrashBin = styled(BaseComponent)`
+const TrashBin = styled(BaseComponent)`
   display: inline-block;
   vertical-align: ${props => props.verticalalign || 'top'};
   overflow: hidden;
   width: ${props => props.width || props.size || '1em'};
   fill: ${props => props.fill || props.color || 'black'};
 `
-// module.exports = TrashBin
-// export default TrashBin
+export default TrashBin

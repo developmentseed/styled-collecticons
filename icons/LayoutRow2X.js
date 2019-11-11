@@ -1,8 +1,6 @@
-const React = require('react')
+import React from 'react';
 
-const {
-  default: styled
-} = require('styled-components')
+import styled from 'styled-components'
 
 const BaseComponent = props => {
   return <svg width='100%' height='100%' viewBox='0 0 16 16' preserveAspectRatio='xMidYMid meet' {...props}><rect width='100%' height='100%' id='icon-bound' fill='none' /><path d='M0,0L0,7L16,7L16,0L0,0ZM0,15L16,15L16,8L0,8L0,15Z' /></svg>
@@ -14,4 +12,4 @@ const LayoutRow2X = styled(BaseComponent)`
   overflow: hidden;
   width: ${props => props.width || props.size || '1em'};
 `
-module.exports = LayoutRow2X
+export default LayoutRow2X

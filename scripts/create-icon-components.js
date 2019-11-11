@@ -60,7 +60,7 @@ function createTemplate (componentName) {
       value: { type: 'StringLiteral', value: 'xMidYMid meet' }
     })
 
-    return template.ast`const React = require('react')
+    return template.ast`import React from 'react';
       const { default: styled } = require('styled-components')
 
       const BaseComponent = (${props}) => {

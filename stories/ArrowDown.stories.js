@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
-import { ArrowDown } from '../icons/ArrowDown';
+import ArrowDown from '../icons/ArrowDown';
 
 
 storiesOf('ArrowDown', module)

@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
 
-import { TrashBin } from '../icons/TrashBin';
+import TrashBin from '../icons/TrashBin';
 
 const Button = styled.button`
   background-color: #efefef;
