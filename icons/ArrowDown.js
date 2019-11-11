@@ -25,7 +25,7 @@ const BaseComponent = props => {
 
 export const ArrowDown = styled(BaseComponent)`
   display: inline-block;
-  vertical-align: ${props => props.verticalAlign || 'top'};
+  vertical-align: ${props => props.verticalalign || 'top'};
   overflow: hidden;
   width: ${props => props.width || props.size || '1em'};
 `
