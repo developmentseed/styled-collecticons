@@ -74,7 +74,7 @@ function createTemplate (componentName) {
   width: \${(props) => props.width || props.size || '1em' };
 \`
 
-      module.exports = ${componentName}
+      export default ${componentName}
     `
   }
 }
