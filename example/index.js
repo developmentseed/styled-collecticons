@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from 'styled-components'
 
-const { TrashBin } = require('../index')
+import { TrashBin } from '../icons/TrashBin';
 
 const Button = styled.button`
   background-color: #efefef;
@@ -13,14 +13,13 @@ const Button = styled.button`
 
 const Trash = styled(TrashBin)`
   margin-right: 5px;
-  fill: red;
 `
 
 function Example () {
   return <div>
     <h1>Icons</h1>
     <Button>
-      <Trash size='1em' />
+      <Trash size='1em' fill='black' verticalalign='bottom' />
       Delete
     </Button>
   </div>
