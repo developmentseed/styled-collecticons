@@ -60,7 +60,7 @@ function createTemplate (componentName) {
       value: { type: 'StringLiteral', value: 'xMidYMid meet' }
     })
 
-    return template.ast`const React = require('react')
+    return template.ast`import React from 'react';
       const { default: styled } = require('styled-components')
 
       const BaseComponent = (${props}) => {
@@ -69,12 +69,12 @@ function createTemplate (componentName) {
 
       const ${componentName} = styled(BaseComponent)\`
   display: inline-block;
-  vertical-align: \${(props) => props.verticalAlign || 'top'};
+  vertical-align: \${(props) => props.verticalalign || 'top'};
   overflow: hidden;
   width: \${(props) => props.width || props.size || '1em' };
 \`
 
-      module.exports = ${componentName}
+      export default ${componentName}
     `
   }
 }

@@ -1,8 +1,6 @@
-const React = require('react')
+import React from 'react';
 
-const {
-  default: styled
-} = require('styled-components')
+import styled from 'styled-components'
 
 const BaseComponent = props => {
   return <svg width='100%' height='100%' viewBox='0 0 16 16' preserveAspectRatio='xMidYMid meet' {...props}><rect width='100%' height='100%' id='icon-bound' fill='none' /><polygon points='13,8 5,16 5,0' /></svg>
@@ -10,8 +8,8 @@ const BaseComponent = props => {
 
 const TriangleRight = styled(BaseComponent)`
   display: inline-block;
-  vertical-align: ${props => props.verticalAlign || 'top'};
+  vertical-align: ${props => props.verticalalign || 'top'};
   overflow: hidden;
   width: ${props => props.width || props.size || '1em'};
 `
-module.exports = TriangleRight
+export default TriangleRight

@@ -8,7 +8,9 @@
     "lint": "devseed-standard",
     "lintfix": "devseed-standard --fix",
     "example-start": "budo example/index.js --live -- -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ]",
-    "create-icons": "node scripts/create-icon-components.js && npm run lintfix"
+    "create-icons": "node scripts/create-icon-components.js && npm run lintfix",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": "^16.0.0",
@@ -18,7 +20,12 @@
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5",
     "@svgr/core": "^4.3.3",
+    "babel-loader": "^8.0.6",
     "babelify": "^10.0.0",
     "budo": "^11.6.3",
     "collecticons-lib": "^2.1.0",
@@ -37,5 +44,11 @@
   "author": {
     "name": "Development Seed",
     "url": "https://developmentseed.org"
+  },
+  "dependencies": {
+    "@storybook/addon-a11y": "^5.2.6",
+    "@storybook/addon-knobs": "^5.2.6",
+    "@storybook/addon-notes": "^5.2.6",
+    "@storybook/addon-storysource": "^5.2.6"
   }
 }
